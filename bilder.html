@@ -122,10 +122,10 @@
                 class="q-mx-none q-py-none q-my-none custom_tab wrap" @click="goTo('./img/Satzung.pdf')"
                 style="max-width: 100px;flex-wrap: wrap !important;vertical-align: middle;min-height:50px !important;margin-top:none;border-top:none;border-bottom:none;color: grey" label="Satzung" >
               </q-tab>
-              <q-tab :style="[selected_tab == 't_1' ? {backgroundColor: bg_color} : {}]"
+              <!-- <q-tab :style="[selected_tab == 't_1' ? {backgroundColor: bg_color} : {}]"
                 class="q-mx-none q-py-none q-my-none custom_tab wrap" @click="goTo('./img/Beitrittserklaerung_TSC.pdf')"
                 style="max-width: 100px;flex-wrap: wrap !important;vertical-align: middle;min-height:50px !important;margin-top:none;border-top:none;border-bottom:none;color: grey" label="Beitritt" >
-              </q-tab>
+              </q-tab> -->
               <!-- <span class="material-design-icons-4">chevron_right</span> -->
               <!-- <img src="./fonts/material-design-icons-4.0.0/baseline_chevron_right_black_24dp.png" style="height: 40px; padding-left: 5%; opacity: 0.7;" ><span :style="'font-size: 20px;'" class="material-design-icons-4 my-font text-h6 text-grey-7 q-mx-md text-weight-light">chevron_right</span> -->
             </q-tabs>
@@ -387,6 +387,56 @@
                   <div class="col-md-1" ></div>
                 </div>
 
+
+                <!-- Bildergruppe 4: Tanzsession TSC Kids -->
+                <div class="row">
+                  <div class="col-md-1" ></div>
+
+                  <div class="q-py-xl col-12 col-lg-10 col-md-10">
+                    <q-card inline @mouseover="hoverOver(1)" @mouseout="hoverOutTimeout(1)" style="border: none;background: #EEEEEE;"
+                      class="text-left" flat bordered>
+  
+                      <q-card-section class="text-left">
+
+                        <!-- Tanzsession TSC Kids -->
+                        <div class="row justify-center">
+
+                          <div class="col-9 col-lg-9 col-md-10 col-sm-11 col-xs-12 q-pl-md q-pr-lg">
+                            <div class="row q-pb-xs q-pt-md justify-center">
+                              <q-img style="height: 100%; align-items: flex-end;" src="./img/bildergalerie/TSCkids_4_small.JPG" >
+                              </q-img>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="row">
+                          <div class="text-caption text-grey-10 q-mt-xs q-ml-xl q-pl-xl">
+                            Tanzsession der TSC Kids
+                          </div>
+                        </div>
+
+                        <!-- Tanzsession TSC Kids -->
+                        <div class="row justify-center">
+
+                          <div class="col-9 col-lg-9 col-md-10 col-sm-11 col-xs-12 q-pl-md q-pr-lg">
+                            <div class="row q-pb-xs q-pt-md justify-center">
+                              <q-img style="height: 100%; width: 60%; align-items: flex-end;" src="./img/bildergalerie/TSCkids_2_small.JPG" >
+                              </q-img>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="row">
+                          <div class="text-caption text-grey-10 q-mt-xs q-ml-xl q-pl-xl">
+                            
+                          </div>
+                        </div>
+
+                      </q-card-section>
+                    </q-card>
+                  </div>
+                  <div class="col-md-1" ></div>
+                </div>
 
                 <!-- <br />
                 <br /> -->
