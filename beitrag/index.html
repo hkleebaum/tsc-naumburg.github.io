@@ -91,7 +91,6 @@
 
 
         <!-- header -->
-        <!-- background possible design dark blueish grey: #4b4f51; -->
         <q-header :style="'background:rgba(255,255,255,0.97);'" class="q-py-none material-design-icons-4 row flex wrap" >
 
           <q-toolbar class="items-bottom material-design-icons-4 row flex wrap" style="justify-content: right;">
@@ -110,10 +109,6 @@
                 class="q-mx-none q-px-md q-py-none q-my-none custom_tab wrap" @click="goTo('../index.html#id_adults');"
                 style="max-width: 114px;flex-wrap: wrap !important;vertical-align: middle;min-height:50px !important; margin-top:none;border-top:none;border-bottom:none;color: grey" label="Erwachsene" >
               </q-tab>
-              <!-- <q-tab :style="[selected_tab == 't_1' ? {backgroundColor: bg_color} : {}]"
-                class="q-mx-none q-py-none q-my-none custom_tab wrap" @click="goTo('../index.html#id_powermix');"
-                style="max-width: 105px;flex-wrap: wrap !important;vertical-align: middle;min-height:50px !important; margin-top:none;border-top:none;border-bottom:none;color: grey" label="Powermix" >
-              </q-tab> -->
               <q-tab :style="[selected_tab == 't_1' ? {backgroundColor: bg_color} : {}]"
                 class="q-mx-none q-py-none q-my-none custom_tab wrap" @click="goTo('../index.html#id_training');"
                 style="max-width: 100px;flex-wrap: wrap !important;vertical-align: middle;min-height:50px !important;margin-top:none;border-top:none;border-bottom:none;color: grey" label="Training" >
@@ -130,15 +125,12 @@
                 class="q-mx-none q-py-none q-my-none custom_tab wrap" @click="goTo('../img/Beitrittserklaerung_TSC.pdf')"
                 style="max-width: 100px;flex-wrap: wrap !important;vertical-align: middle;min-height:50px !important;margin-top:none;border-top:none;border-bottom:none;color: grey" label="Beitritt" >
               </q-tab>
-              <!-- <span class="material-design-icons-4">chevron_right</span> -->
-              <!-- <img src="./fonts/material-design-icons-4.0.0/baseline_chevron_right_black_24dp.png" style="height: 40px; padding-left: 5%; opacity: 0.7;" ><span :style="'font-size: 20px;'" class="material-design-icons-4 my-font text-h6 text-grey-7 q-mx-md text-weight-light">chevron_right</span> -->
             </q-tabs>
           </q-toolbar>
         </q-header>
 
 
         <q-page-container>
-          <!-- <router-view /> -->
 
           <q-page>
 
@@ -163,7 +155,6 @@
             </div>
 
 
-
             <!-- Mitgliederbeitraege -->
             <div class="q-px-md bg-primary" >
               <div class="q-px-xl q-pt-sm bg-primary" id="id_kids" >
@@ -180,30 +171,25 @@
 
                           <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 q-pl-md q-pr-lg">
                             <div class="row">
-                              <div class="text-caption text-grey-10 q-mt-sm">
-                                
+                              <div class="text-caption text-grey-10 q-mt-sm"> 
                               </div>
                             </div>
                             <div class="row">
                               <div :class="about_heading_1" :style="'color: ' + about_heading_color_1"
                                 class="about_heading_1 text-h6 text-grey-10 q-mt-sm q-mb-xs">
-                                <!-- <a href="https://linktomoreinfo.org" style="color:white; text-decoration: none;"> -->
                                   § 3 Mitgliedsbeiträge und Aufnahmegebühren
-                                  <!-- </a> -->
                               </div>
                             </div>
                             <div class="row">
-                              <!-- <a href="https://linktomoreinfo.org" style="color:white; text-decoration: none;"> -->
-                                <div class="text-grey-10 q-mt-sm" style="font-size: medium;">
-                                  <span class="p2">1.</span> Die monatlichen Beiträge der ordentlichen und außerordentlichen Mitglieder werden in einer monatlichen Zahlung per Dauerauftrag an den Verein gezahlt.<br />
-                                  <span class="p2">2.</span> Folgende Beiträge gelten:<br />
-                                  a. ordentliche Mitglieder -Gesellschaftstanz-: 15,00 Euro <br />
-                                  b. ordentliche Mitglieder -Gymnastik-: 13,00 Euro<br />
-                                  c. außerordentliche Mitglieder (Kinder/Jugendliche bis 18 Jahre): 10,00 Euro<br />
-                                  d. außerordentliche Mitglieder (Geschwisterkinder bis 18 Jahre): 7,50 Euro<br />
-                                  <span class="p2">3.</span> Der Verein erhebt eine Aufnahmegebühr von 25,00 Euro (fünfundzwanzig Euro), die nach Aufnahme in den Verein fällig wird und mit dem ersten Mitgliedsbeitrag per Überweisung zu entrichten ist.<br />
-                                </div>
-                              <!-- </a> -->
+                              <div class="text-grey-10 q-mt-sm" style="font-size: medium;">
+                                <span class="p2">1.</span> Die monatlichen Beiträge der ordentlichen und außerordentlichen Mitglieder werden in einer monatlichen Zahlung per Dauerauftrag an den Verein gezahlt.<br />
+                                <span class="p2">2.</span> Folgende Beiträge gelten:<br />
+                                a. ordentliche Mitglieder -Gesellschaftstanz-: 15,00 Euro <br />
+                                b. ordentliche Mitglieder -Gymnastik-: 13,00 Euro<br />
+                                c. außerordentliche Mitglieder (Kinder/Jugendliche bis 18 Jahre): 10,00 Euro<br />
+                                d. außerordentliche Mitglieder (Geschwisterkinder bis 18 Jahre): 7,50 Euro<br />
+                                <span class="p2">3.</span> Der Verein erhebt eine Aufnahmegebühr von 25,00 Euro (fünfundzwanzig Euro), die nach Aufnahme in den Verein fällig wird und mit dem ersten Mitgliedsbeitrag per Überweisung zu entrichten ist.<br />
+                              </div>
                             </div>
                             <!-- next paragraph -->
                             <div class="row">
@@ -213,13 +199,13 @@
                               </div>
                             </div>
                             <div class="row">
-                                <div class="text-grey-10 q-mt-sm" style="font-size: medium;">
-                                  <span class="p2">1.</span> Die Zahlungsverpflichtungen der Mitglieder werden ausschließlich per Dauerauftrag von den Mitgliedern auf folgendes Konto überwiesen:<br />
-                                  Kreditinstitut: Sparkasse Burgenlandkreis, Zeitz<br />
-                                  Verwendungszweck: Mitgliedsnummer und Monat<br />
-                                  IBAN: DE79 8005 3000 3320 0149 93<br />
-                                  BIC: NOLADE21BLK
-                                </div>
+                              <div class="text-grey-10 q-mt-sm" style="font-size: medium;">
+                                <span class="p2">1.</span> Die Zahlungsverpflichtungen der Mitglieder werden ausschließlich per Dauerauftrag von den Mitgliedern auf folgendes Konto überwiesen:<br />
+                                Kreditinstitut: Sparkasse Burgenlandkreis, Zeitz<br />
+                                Verwendungszweck: Mitgliedsnummer und Monat<br />
+                                IBAN: DE79 8005 3000 3320 0149 93<br />
+                                BIC: NOLADE21BLK
+                              </div>
                             </div>
                             <!-- next paragraph -->
                             <div class="row">
@@ -229,14 +215,13 @@
                               </div>
                             </div>
                             <div class="row">
-                                <div class="text-grey-10 q-mt-sm" style="font-size: medium;">
-                                  <span class="p2">1.</span> Als Zahlungsrhythmus ist eine monatliche Beitragsentrichtung bis zum <b>15. des Monats</b> unter Angabe der <b>Mitgliedsnummer</b> zu überweisen.<br />
-                                  <span class="p2">2.</span> Rückbuchungen gehen zu Lasten des Beitragszahlungspflichtigen. Beitragszahlungen erfolgen durchgehend über die 12 Monate eines jeden Jahres, unabhängig vom Stattfinden des Trainings.<br />
-                                  <span class="p2">3.</span> Sollte ein Mitglied seinen Zahlungsverpflichtungen nicht fristgemäß nachkommen, wird es
-                                  vom Verein gemahnt und verliert bei fortgesetzter Nichteinhaltung der Beitragspflicht seine mitgliedschaftlichen Rechte.
-                                </div>
+                              <div class="text-grey-10 q-mt-sm" style="font-size: medium;">
+                                <span class="p2">1.</span> Als Zahlungsrhythmus ist eine monatliche Beitragsentrichtung bis zum <b>15. des Monats</b> unter Angabe der <b>Mitgliedsnummer</b> zu überweisen.<br />
+                                <span class="p2">2.</span> Rückbuchungen gehen zu Lasten des Beitragszahlungspflichtigen. Beitragszahlungen erfolgen durchgehend über die 12 Monate eines jeden Jahres, unabhängig vom Stattfinden des Trainings.<br />
+                                <span class="p2">3.</span> Sollte ein Mitglied seinen Zahlungsverpflichtungen nicht fristgemäß nachkommen, wird es
+                                vom Verein gemahnt und verliert bei fortgesetzter Nichteinhaltung der Beitragspflicht seine mitgliedschaftlichen Rechte.
+                              </div>
                             </div>
-
 
                           </div>
 
@@ -250,10 +235,8 @@
                 </div>
 
 
-                <!-- <br />
-                <br /> -->
-              </div> <!--end of <div class="q-px-xl q-pt-sm bg-primary" id="id_kids" >-->
-            </div><!-- end of Gruppen <div class="q-px-md bg-primary" > -->
+              </div>
+            </div>
 
 
 
@@ -266,9 +249,6 @@
                     Impressum&nbsp;&nbsp;&nbsp;
                   </a>
                 </span>
-                <!-- <q-btn round type="a" href="mailto:anfrage@tanzsportclub-blk.de"
-                  :style="'background:'+ theme_color +'; color: white !important;'" icon="email" >
-                </q-btn> -->
                 <a href="mailto:anfrage@tanzsportclub-blk.de" >
                   <img src="../fonts/material-design-icons-4.0.0/email_24px_white.png" style="width:20px; color: white !important; transform: translate(0,25%);" />
                 </a>
@@ -296,7 +276,6 @@
     <script src='/js/main.js'></script>
 
 
-    <!-- #4b4f51 is grey with a touch blueish; theme_color: '#668fa6' blueish grey; same as background_style -->
     <script>
       const { getScrollTarget, setScrollPosition } = Quasar.scroll
   
